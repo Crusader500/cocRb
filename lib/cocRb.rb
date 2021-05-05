@@ -11,17 +11,5 @@ require 'faraday'
 require 'time'
 require "json"
 
-CocRb.configure do |config|
-     config.token = token
-end
-
-conn = CocRb::Player
-
-get = conn.getPlayerBy_Tag(tag: "#8LR0RUGJU", status: "check_status")
-
-if get == 503
-puts "The Server is under Maintenance, Try again later."
-else
 module CocRb
-end
 end
