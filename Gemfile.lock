@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cocRb (0.1.1)
+    cocRb (0.1.2)
       faraday (~> 1.4.1)
       json (~> 2.5.1)
       time (~> 0.1.0)
