@@ -1,4 +1,7 @@
 # frozen_string_literal: true
+require 'rspec'
+require "faraday"
+
 
 RSpec.describe CocRb do
   it "has a version number" do

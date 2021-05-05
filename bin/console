@@ -1,5 +1,4 @@
-#!/usr/bin/env ruby
-# frozen_string_literal: true
+
 
 require "bundler/setup"
 require "cocRb"
@@ -12,4 +11,4 @@ require "cocRb"
 # Pry.start
 
 require "irb"
-IRB.start(__FILE__)
+IRB.start
