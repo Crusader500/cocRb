@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Crusader123"]
   spec.email         = ["crazyboy15october@gmail.com"]
   spec.summary       = "A Gem for intreacting with the Clash of Clans API easily!"
-  spec.files         = DIR["LICENSE", "README.md", "Rakefile", "lib/**/*"]
+  spec.files         = Dir["LICENSE", "README.md", "Rakefile", "lib/**/*"]
   spec.description   = ""
   spec.homepage      = "https://github.com/Crusader500/cocRb"
   spec.license       = "MIT"
