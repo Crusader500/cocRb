@@ -7,6 +7,8 @@ require_relative './cocRb/labels'
 require_relative './cocRb/league'
 require_relative './cocRb/location'
 require_relative './cocRb/player'
+
+require 'rdoc'
 require 'faraday'
 require 'time'
 require "json"
