@@ -1,3 +1,5 @@
+![coc Rb](https://media.discordapp.net/attachments/662341843861766164/840179613719199744/received_330242155188499.webp?width=630&height=630)
+
 # CocRb
 
 Welcome everyone to your Ruby Gem CocRb. By using this gem you can easily interact with the Game API of Clash of Clans without using any external gems to call this API.
