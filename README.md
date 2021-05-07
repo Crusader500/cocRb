@@ -1,4 +1,4 @@
-            ![coc Rb](https://media.discordapp.net/attachments/662341843861766164/840316348554412042/unknown-removebg-preview.png)
+![coc Rb](https://media.discordapp.net/attachments/662341843861766164/840316348554412042/unknown-removebg-preview.png)
 
 # CocRb
 
