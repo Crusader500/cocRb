@@ -72,7 +72,7 @@ def self.get_Seasons(leagueId:, _limit:false, status:false)
        end
     end
 
-      def self.get_League_SeasonRank(leagueId:, seasonId:, _limit:false, status:false)
+      def self.get_LeagueSeasonRank(leagueId:, seasonId:, _limit:false, status:false)
               get
       if leagueId != 29000022
               puts "Not a valid League id,Seasons are only available for Legend League"
