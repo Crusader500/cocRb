@@ -36,7 +36,7 @@ module CocRb
 end
 
 class Location < Settings
-
+    # This method will get all the location ID including country name and country code.
     def self.get_LocationId(_limit:false, status:false)
             get
             res = @conn.get("v1/locations") do |req|
