@@ -1,6 +1,6 @@
 # CocRb
 
-Welcome everyone to your Ruby Gem CocRb. By using this gem you can easily interact with the Game API of Clash of Clans. Without using any external gems to call the API.
+Welcome everyone to your Ruby Gem CocRb. By using this gem you can easily interact with the Game API of Clash of Clans without using any external gems to call this API.
 
 ## Installation
 
@@ -50,7 +50,7 @@ The API can also be called without using the **URL** in the Configuration block 
 
 
 
-The Detailed info about all the Classes and Methods for this Library can be found in our [Documentation](https://rdoc.info/github/Crusader500/cocRb/master)
+The Detailed info about all the Classes and Methods for this Library can be found in our Documentation
 
 
 ```ruby
