@@ -16,5 +16,3 @@ gem "time", "~> 0.1.0"
 
 
 gem "json", "~> 2.5.1"
-
-gem "webrick", "~> 1.7"
