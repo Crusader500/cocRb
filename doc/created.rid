@@ -1,4 +1,4 @@
-Fri, 07 May 2021 19:38:21 +0600
+Fri, 07 May 2021 20:02:48 +0600
 CHANGELOG.md	Wed, 24 Mar 2021 17:16:17 +0600
 CODE_OF_CONDUCT.md	Wed, 24 Mar 2021 17:16:17 +0600
 Gemfile	Fri, 07 May 2021 18:15:33 +0600
@@ -13,7 +13,7 @@ lib/cocRb/clan.rb	Fri, 07 May 2021 01:00:02 +0600
 lib/cocRb/clanWar.rb	Fri, 07 May 2021 01:04:02 +0600
 lib/cocRb/gp.rb	Fri, 07 May 2021 01:08:59 +0600
 lib/cocRb/labels.rb	Fri, 07 May 2021 01:15:09 +0600
-lib/cocRb/league.rb	Fri, 07 May 2021 01:54:49 +0600
+lib/cocRb/league.rb	Fri, 07 May 2021 19:46:13 +0600
 lib/cocRb/location.rb	Fri, 07 May 2021 02:04:03 +0600
 lib/cocRb/player.rb	Fri, 07 May 2021 02:08:37 +0600
 lib/cocRb/utility.rb	Fri, 07 May 2021 02:10:58 +0600
