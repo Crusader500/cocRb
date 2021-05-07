@@ -5,7 +5,7 @@ lib/cocRb/clan.rb 2606adc85fc95e3dad95c92a7498dd5b4152923a
 lib/cocRb/labels.rb 7664f5b6179d12dc0707b68687f93539e91ca425
 lib/cocRb/league.rb f57dd3786056c4a057ee6037da6ce49991a6a805
 lib/cocRb/player.rb 723e9fa05c0acaf5b14f9814a38d5a35ce333b85
+lib/cocRb/clanWar.rb 8fd201591e8f2c6d0e0e7445a7bafbf687828d34
 lib/cocRb/utility.rb 6c2c58e2908b51d4cca57c25ee62be372dd1a3cf
 lib/cocRb/version.rb bcfd8c385bd77110712334bf45ccb73462bd3d6e
-lib/cocRb/clanWar.rb 8fd201591e8f2c6d0e0e7445a7bafbf687828d34
 lib/cocRb/location.rb 16ac0e6546f2b3c408022d19d110975fecbaae6c
