@@ -20,6 +20,16 @@ Or install it yourself as:
 
     $ gem install cocRb
 
+
+## Table of Contents
+
+1. [ Usage ] (#usage)
+
+
+
+
+
+<a name="usage"></a>
 ## Usage
 CocRb Gem is categorized with [Classes](https://www.tutorialspoint.com/ruby/ruby_classes.htm) and [Methods](https://www.tutorialspoint.com/ruby/ruby_methods.htm) as below down you can see but before accessing any of those we have to set **Configuration** in order to setup the Authorization for accessing the [Clash of Clans API](https://developer.clashofclans.com/#) so to do that we have set **Configure** block and inside that block we have configured our **TOKEN** and the **URL**.
 
