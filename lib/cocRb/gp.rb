@@ -39,7 +39,7 @@ class Settings
    end
 
 class GoldPass < Settings
-
+     # This method gets GoldPass Information. 
      def self.get_GoldPassInfo(status: false)
             get
             res = @conn.get("v1/goldpass/seasons/current")

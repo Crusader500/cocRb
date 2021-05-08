@@ -38,7 +38,7 @@ module CocRb
   end
 
 class Label < Settings
-
+  # This method gets Labels for the Player Profile.
   def self.get_LabelPlayer(_limit:false, status: false)
           get
           res = @conn.get("v1/labels/players") do |req|
@@ -52,7 +52,7 @@ class Label < Settings
            convert = JSON.parse(val)
       end
    end
-
+  # This method gets Labels for the Clan Profile.
   def self.get_LabelClan(_limit:false, status: false)
            get
            res = @conn.get("v1/labels/clans") do |req|

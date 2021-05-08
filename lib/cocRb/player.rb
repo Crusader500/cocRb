@@ -37,7 +37,9 @@ end
 end
 
   class Player < Settings
-
+     # This method gets Player Information, Takes player tag as a paramter
+     #
+     # *Paramter Data Type*  => _String_
      def self.get_PlayerByTag(tag:, status: false)
           get
           io = tag
@@ -51,7 +53,9 @@ end
           convert = JSON.parse(val)
       end
    end
-
+   # This method verifies a player, Takes tag and playertoken as a parameter.
+   #
+   # *Paramter Data Types*  => _String_
    def self.verify_PlayerByToken(tag:, playertoken:)
            get
            io = tag

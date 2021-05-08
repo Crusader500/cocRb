@@ -35,6 +35,7 @@ end
 end
 
 class ClashApi < Settings
+    # This method can call any of the API endpoint except the player verifier endpoint.Takes requestUrl in the configuration block.
     def self.call_API(status: false)
       get
       res = @conn.get(CocRb.configuration.url)

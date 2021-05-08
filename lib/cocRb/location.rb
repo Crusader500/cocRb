@@ -50,7 +50,9 @@ class Location < Settings
 
   end
 end
-   # This method gets detailed location information takes Location as a paramter 
+   # This method gets detailed location information, takes Location ID as a paramter.
+   #
+   # *Paramter Data Type*  => _Integer_
    def self.get_LocationInfo(locationId:, status:false)
              get
              res = @conn.get("v1/locations/#{locationId}")
@@ -62,7 +64,9 @@ end
   end
 end
 
-
+   # This method gets all the Ranked clans for a particular Location, Takes Location id as a paramter.
+   #
+   # *Paramter Data Type*  => _Integer_
    def self.get_LocationRankClan(locationId:, _limit:false, status:false)
               get
               res = @conn.get("v1/locations/#{locationId}/rankings/clans") do |req|
@@ -75,7 +79,9 @@ end
               convert = JSON.parse(val)
   end
 end
-
+   # This method gets all the Ranked palyers for a particular Location, Takes Location id as a paramter.
+   #
+   # *Paramter Data Type*  => _Integer_
    def self.get_LocationRankPlayer(locationId:, _limit:false, status:false)
               get
               res = @conn.get("v1/locations/#{locationId}/rankings/players") do |req|
@@ -88,7 +94,9 @@ end
               convert = JSON.parse(val)
   end
 end
-
+  # This method gets all the Ranked clans for Builder Base Clan Versus Trophies, Takes Location id as a paramter.
+  #
+  # *Paramter Data Type*  => _Integer_
   def self.get_LocationRankClanVersus(locationId:, _limit:false, status:false)
               get
               res = @conn.get("v1/locations/#{locationId}/rankings/clans-versus") do |req|
@@ -101,7 +109,9 @@ end
               convert = JSON.parse(val)
   end
 end
-
+  # This method gets all the Ranked players for Builder Base Player Versus Trophies, Takes Location id as a paramter.
+  #
+  # *Paramter Data Type*  => _Integer_
   def self.get_LocationRankPlayerVersus(locationId:, _limit:false, status:false)
              get
              res = @conn.get("v1/locations/#{locationId}/rankings/players-versus") do |req|

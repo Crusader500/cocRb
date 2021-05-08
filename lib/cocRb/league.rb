@@ -37,7 +37,7 @@ module CocRb
 end
 
 class League < Settings
-
+   # This method gets League ID for all the Leagues.
    def self.get_LeaguesID(_limit:false, status:false)
               get
               res = @conn.get('v1/leagues') do |req|
@@ -53,8 +53,10 @@ class League < Settings
 
   end
 end
-
-def self.get_Seasons(leagueId:, _limit:false, status:false)
+   # This method gets season Info for Legend League, Takes League ID as a parameter.
+   #
+   # *Paramter Data Type*  => _Integer_
+  def self.get_Seasons(leagueId:, _limit:false, status:false)
               get
        if leagueId != 29000022
               puts "Not a valid League id,Seasons are only available for Legend League"
@@ -71,7 +73,9 @@ def self.get_Seasons(leagueId:, _limit:false, status:false)
           end
        end
     end
-
+       # This method gets Season Rank for Legend League, Takes League ID and Season ID as parameter.
+       #
+       # *Paramter Data Types*  => _Integer_, _String_
       def self.get_LeagueSeasonRank(leagueId:, seasonId:, _limit:false, status:false)
               get
       if leagueId != 29000022
@@ -88,7 +92,9 @@ def self.get_Seasons(leagueId:, _limit:false, status:false)
       end
    end
 end
-
+       # This method gets League Info for a particular league ID.
+       #
+       # *Paramter Data Type*  => _Integer_
        def self.get_LeagueInfo(leagueId:, status:false)
               get
               res = @conn.get("v1/leagues/#{leagueId}")
@@ -101,7 +107,7 @@ end
     end
 end
 
-
+    # This method gets War League ID.
     def self.get_WarLeagueId(_limit:false, status:false)
              get
              res = @conn.get("v1/warleagues") do |req|
@@ -115,7 +121,9 @@ end
              convert = JSON.parse(val)
         end
     end
-
+     # This method gets War League Info takes warLeagueId as a paramter.
+     #
+     # *Paramter Data Type*  => _Integer_
      def self.get_WarLeagueInfo(warLeagueId:, status:false)
              get
              res = @conn.get("v1/warleagues/#{warLeagueId}")

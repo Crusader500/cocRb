@@ -37,8 +37,8 @@ end
 
 
   class Check < Settings
-
-      def self.check_headers
+       # This method gets headers for a particular endpoint. Takes the requestUrl in the configuration block.
+      def self.get_Headers
            get
            res = @conn.get(CocRb.configuration.url)
            res.headers
