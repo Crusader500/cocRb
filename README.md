@@ -52,7 +52,7 @@ The API can also be called without using the **URL** in the Configuration block 
 
 
 
-The Detailed info about all the Classes and Methods for this Library can be found in our Documentation
+The Detailed info about all the Classes and Methods for this Library can be found in our Documentation.
 
 
 ```ruby
