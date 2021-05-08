@@ -50,7 +50,7 @@ class Location < Settings
 
   end
 end
-
+   # This method gets detailed location information takes Location as a paramter 
    def self.get_LocationInfo(locationId:, status:false)
              get
              res = @conn.get("v1/locations/#{locationId}")
