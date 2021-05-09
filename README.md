@@ -25,7 +25,7 @@ Or install it yourself as:
 
 # Links
 
-* Full Documentation
+* [Full Documentation](https://www.rubydoc.info/gems/cocRb/1.1.5)
 * [GEM](https://rubygems.org/gems/cocRb)
 
 
