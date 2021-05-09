@@ -38,6 +38,9 @@ module CocRb
   end
 
   class ClanWar < Settings
+      # This methods gets the current warLog for a clan, Takes clan tag as a paramter
+      #
+      # Paramter Data Type => _String_
       def self.get_WarLog(tag:, _limit:false, status: false)
             get
             io = tag
@@ -53,7 +56,9 @@ module CocRb
             convert = JSON.parse(val)
        end
     end
-
+      # This method gets information about current on-going war,Takes tag as a paramter
+      #
+      # Paramter Data Type => _String_
       def self.get_ClanWar(tag:, status: false)
             get
             io = tag
@@ -68,7 +73,11 @@ module CocRb
             convert = JSON.parse(val)
        end
     end
-
+       # This method gets the members that are in war. In Descending to Ascending TH order. Takes tag as a paramter and teamInput.
+       #
+       # Note: _The team Input options can be found in Github README._
+       #
+       # Paramter Data Types => _String_
        def self.get_ClanWarMembers(tag:, teamInput:, status: false)
             get
             teamInput_Options = ["clan", "opponent"]
@@ -98,7 +107,11 @@ module CocRb
          end
        end
     end
-
+      # This method gets all the timings for on-going war in UTC Time Zone, Takes tag as a paramater
+      #
+      # Note: _This method will also return the War Times in parsed Format_
+      #
+      # Paramter Data Type => _String_
       def self.get_WarTime(tag:, status: false)
             get
             io = tag
@@ -136,6 +149,9 @@ module CocRb
 end
 
   class ClanWarLeague < Settings
+      # This method gets Clan War League Group, Takes tag as a paramter.
+      #
+      # Paramter Data Type => _String_
       def self.get_ClanWarLeagueGroup(tag:,status: false)
             get
             io = tag
@@ -151,7 +167,9 @@ end
             convert = JSON.parse(val)
     end
   end
-
+      # This method only returns the filtred items [tag, name,ClanLevel,badgeUrls] from Clan War League Group Endpoint. Takes tag as a paramter
+      #
+      # Paramter Data Type => _String_
      def self.get_ClanWarLeagueClanItems(tag:,status: false)
             get
             io = tag
@@ -227,7 +245,9 @@ end
 
        end
     end
-
+    # This method returns the WarTags for all the Groups. Takes tag as a paramter.
+    #
+    # Paramter Data Type => _String_
     def self.get_WarTags(tag:, status:false)
           get
 
@@ -248,7 +268,9 @@ end
 
       end
    end
-
+    # This method gets info for a particular War, Takes WarTag as a Paramter
+    #
+    # Paramter Data Type => _String_
     def self.get_ClanWarLeagueWars(warTag:, status:false)
           get
           io = warTag
@@ -264,7 +286,11 @@ end
           convert = JSON.parse(val)
        end
     end
-
+    # This method gets all the timings for on-going Clan War League in UTC Time Zone, Takes tag as a paramater
+    #
+    # Note: _This method will also return the War Times in parsed Format_
+    #
+    # Paramter Data Type => _String_
     def self.get_ClanWarLeagueWarTimes(warTag:, status: false)
          get
          io = warTag

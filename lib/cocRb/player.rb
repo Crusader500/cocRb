@@ -55,7 +55,7 @@ end
    end
    # This method verifies a player, Takes tag and playertoken as a parameter.
    #
-   # *Paramter Data Types*  => _String_
+   # Paramter Data Types  => _String_
    def self.verify_PlayerByToken(tag:, playertoken:)
            get
            io = tag

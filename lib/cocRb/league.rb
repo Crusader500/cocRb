@@ -55,7 +55,7 @@ class League < Settings
 end
    # This method gets season Info for Legend League, Takes League ID as a parameter.
    #
-   # *Paramter Data Type*  => _Integer_
+   # Paramter Data Type  => _Integer_
   def self.get_Seasons(leagueId:, _limit:false, status:false)
               get
        if leagueId != 29000022

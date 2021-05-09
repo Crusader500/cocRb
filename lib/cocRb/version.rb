@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module CocRb
-  VERSION = "0.1.5"
+  VERSION = "1.1.5"
 end

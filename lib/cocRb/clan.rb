@@ -37,6 +37,12 @@ module CocRb
    end
 
   class Clan < Settings
+       # This method gets clan according to clan filter option. Takes name, filterOptions and filterValue as a parameter.
+       #
+       # If you want to know about _filterOptions_ please check the Github README page for that.
+       #
+       # Paramter Data Types => _String_, _String_, _Integer_
+
        def self.get_FiltredClan(name:, filterOptions:, filterValue:, _limit: false, status: false)
               get
 
@@ -91,7 +97,9 @@ module CocRb
               puts "Not a valid input option for this method"
       end
    end
-
+    # This method gets Clan Information, Takes tag as a parameter.
+    #
+    # Paramter Data Type => _String_
     def self.get_ClanByTag(tag:, status: false)
               get
               io = tag
@@ -107,7 +115,9 @@ module CocRb
               convert = JSON.parse(val)
      end
   end
-
+    # This method gets Clans by name, Takes name as a parameter.
+    #
+    # Paramter Data Type => _String_
     def self.get_ClanByName(name:, _limit: false, status: false)
               get
               count = name.split(/[^-a-zA-Z]/).size
@@ -155,7 +165,9 @@ module CocRb
         end
      end
    end
-
+     # This method gets clan by Location ID. Takes Location ID as a parameter.
+     #
+     # Paramter Data Type => _Integer_
      def self.get_ClanByLocationID(id:, _limit: false, status:false)
               get
 
@@ -174,7 +186,9 @@ module CocRb
               convert = JSON.parse(val)
        end
     end
-
+    # This method gets clan by minimum Clan Level. Takes clan level as a parameter.
+    #
+    # Paramter Data Type => _Integer_
     def self.get_ClanByMinClanLevel(clanLevel:, _limit: false, status: false)
               get
               res = @conn.get('v1/clans') do |req|
@@ -191,7 +205,9 @@ module CocRb
               convert = JSON.parse(val)
       end
    end
-
+     # This method gets clan members. Takes clan tag as a parameter.
+     #
+     # Paramter Data Type => _String_
      def self.get_ClanMembers(tag:, _limit:false, status:false)
               get
               io = tag
@@ -209,7 +225,11 @@ module CocRb
               convert = JSON.parse(val)
       end
    end
-
+       # This method gets detailed clan members. Takes clan tag as a parameter.
+       #
+       # Note: _This method might take 1-2 min time to get execute depending on the data you are requesting_
+       #
+       # Paramter Data Type => _String_
        def self.get_DetailedClanMembers(tag:, _limit: false, status: false)
              get
 

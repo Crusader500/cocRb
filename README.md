@@ -50,7 +50,7 @@ Or install it yourself as:
 * minClanPoints
 * minClanLevel
 
-### Team Input Option
+### Team Input Options
 
 * clan
 * opponent
