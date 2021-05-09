@@ -4,6 +4,8 @@
 
 Welcome everyone to your Ruby Gem CocRb. By using this gem you can easily interact with the Game API of Clash of Clans without using any external gems to call this service.
 
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,13 +22,49 @@ Or install it yourself as:
 
     $ gem install cocRb
 
+
+# Links
+
+* Full Documentation
+* [GEM](https://rubygems.org/gems/cocRb)
+
+
+
 ## Optional Paramters
 
  * **status**: This is default set to false on every method except *verify_PlayerByToken* method. The method Parameter takes any String as an arguement.
- $ Returns => Status Code for a endpoint
+  **Returns => Status Code for a method**
 
  * **_limit**: This is also set to false. You can *limit* any request where limit parameter is available for a method.
- $ Paramter Data Type => Integer
+  **Paramter Data Type => Integer**
+
+
+## Method Options
+
+### Filter Options
+
+* warFrequency
+* locationId
+* minMembers
+* maxMembers
+* minClanPoints
+* minClanLevel
+
+### Team Input Option
+
+* clan
+* opponent
+
+## Status Codes
+
+* **200**: Successful Response.
+* **400**: Client provided incorrect parameters for the request.
+* **403**: Access denied, either because of missing/incorrect credentials or used API token does not grant access to the requested resource.
+* **404**: Resource was not found.
+* **429**: Request was throttled, because amount of requests was above the threshold defined for the used API token.
+* **500**: Unknown error happened when handling the request.
+* **503**: Service is temporarily unavailable because of maintenance.
+* **504**: Request Timeout.
 
 
 ## Usage
@@ -44,7 +82,7 @@ end
 ```
 After done setting up the Authorization we now need to call the API as you can see down below we called the API using **call_API** method now just before that line we have set the class **ClashApi** by name_spacing with **CocRb** [Module](https://www.tutorialspoint.com/ruby/ruby_modules.htm).
 
-**Note:** All the data that we will get from the API reponse was in [JSON](https://jsonapi.org/) but since you are using this gem all of the responses has been **parsed** to Ruby [Hashes](https://www.tutorialspoint.com/ruby/ruby_hashes.htm) so that its get easy for you to access the data.
+**Note:** All the data that we will get from the API response was in [JSON](https://jsonapi.org/) but since you are using this gem all of the responses has been **parsed** to Ruby [Hashes](https://www.tutorialspoint.com/ruby/ruby_hashes.htm) so that its get easy for you to access the data.
 
 
 ```ruby
@@ -61,9 +99,6 @@ The API can also be called without using the **URL** in the Configuration block 
 
 
 
-The Detailed info about all the Classes and Methods for this Library can be found in our Documentation.
-
-
 ```ruby
 
 CocRb.configure do |config|
@@ -77,6 +112,11 @@ response = set_var.verify_PlayerByToken(tag: "#PG8RLGQ2", playertoken: "7jeagw4c
 # Response => {"tag"=>"#PG8RLGQ2", "token"=>"7jeagw4c", "status"=>"ok"}
 
 ```
+
+## Support
+
+* If you need any help understanding the Library, you can join our [Discord Server](https://discord.gg/Eaja7gJ)
+* OR You can create a new Issue on this Repo.
 
 ## License
 
